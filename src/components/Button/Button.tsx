@@ -35,7 +35,10 @@ export interface Props {
    * @default 'medium'
    */
   size?: Size;
-  /** Change the text alignment of the button */
+  /**
+   * Change the text alignment of the button
+   * @default 'center'
+   */
   alignment?: Alignment;
   /** Gives the button a subtle alternative to the default button styling, appropriate for certain backdrops */
   outline?: boolean;
