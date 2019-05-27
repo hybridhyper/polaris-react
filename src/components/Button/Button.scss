@@ -24,19 +24,19 @@ $spinner-size: rem(20px);
   min-height: 1px;
 }
 
-.alignmentLeft {
+.textAlignLeft {
   justify-content: flex-start;
   text-align: left;
 }
 
-.alignmentRight {
-  justify-content: flex-end;
-  text-align: right;
-}
-
-.alignmentCenter {
+.textAlignCenter {
   justify-content: center;
   text-align: center;
+}
+
+.textAlignRight {
+  justify-content: flex-end;
+  text-align: right;
 }
 
 .Icon {
