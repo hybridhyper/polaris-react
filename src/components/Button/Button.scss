@@ -25,14 +25,17 @@ $spinner-size: rem(20px);
 }
 
 .alignmentLeft {
+  justify-content: left;
   text-align: left;
 }
 
 .alignmentRight {
+  justify-content: right;
   text-align: right;
 }
 
 .alignmentCenter {
+  justify-content: center;
   text-align: center;
 }
 

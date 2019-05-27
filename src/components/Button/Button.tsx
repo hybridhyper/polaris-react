@@ -36,7 +36,7 @@ export interface Props {
    */
   size?: Size;
   /**
-   * Change the inner text alignment of the button; this will show when the button overflows to another line
+   * Change the inner text alignment of the button. Visible when the button overflows to another line
    * @default 'center'
    */
   alignment?: Alignment;
@@ -54,7 +54,7 @@ export interface Props {
   monochrome?: boolean;
   /** Forces url to open in a new tab */
   external?: boolean;
-  /** Tells the browser to download the url instead of opening it. Provides a hint for the downloaded filename if it is a string value. */
+  /** Tells the browser to download the url instead of opening it. Provides a hint for the downloaded filename if it is a string value */
   download?: string | boolean;
   /** Icon to display to the left of the button content */
   icon?: React.ReactElement | IconSource;
