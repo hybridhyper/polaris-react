@@ -36,7 +36,7 @@ export interface Props {
    */
   size?: Size;
   /**
-   * Change the inner text alignment of the button. Visible when the button overflows to another line
+   * Change the inner text alignment of the button
    * @default 'center'
    */
   alignment?: Alignment;
