@@ -16,6 +16,8 @@ Use [the changelog guidelines](https://git.io/polaris-changelog-guidelines) to f
 
 ### Enhancements
 
+- Added new Alignment property to button which modifies the inner text-align of the button. Useful for plain buttons.
+
 ### Bug fixes
 
 - Fixed inconsistent width depending on your browser/version in `Sheet` ([#1569](https://github.com/Shopify/polaris-react/pull/1569))

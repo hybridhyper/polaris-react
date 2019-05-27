@@ -24,6 +24,18 @@ $spinner-size: rem(20px);
   min-height: 1px;
 }
 
+.alignmentLeft {
+  text-align: left;
+}
+
+.alignmentRight {
+  text-align: right;
+}
+
+.alignmentCenter {
+  text-align: center;
+}
+
 .Icon {
   transition: color duration() easing();
 

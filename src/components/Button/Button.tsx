@@ -11,6 +11,8 @@ import styles from './Button.scss';
 
 export type Size = 'slim' | 'medium' | 'large';
 
+export type Alignment = 'left' | 'right' | 'center';
+
 export type IconSource = IconProps['source'];
 
 export interface Props {
@@ -33,6 +35,8 @@ export interface Props {
    * @default 'medium'
    */
   size?: Size;
+  /** Change the text alignment of the button */
+  alignment?: Alignment;
   /** Gives the button a subtle alternative to the default button styling, appropriate for certain backdrops */
   outline?: boolean;
   /** Allows the button to grow to the width of its container */
@@ -76,6 +80,7 @@ export interface Props {
 export type CombinedProps = Props & WithAppProviderProps;
 
 const DEFAULT_SIZE = 'medium';
+const DEFAULT_ALIGNMENT = 'center';
 
 function Button({
   id,
@@ -104,6 +109,7 @@ function Button({
   monochrome,
   submit,
   size = DEFAULT_SIZE,
+  alignment = DEFAULT_ALIGNMENT,
   fullWidth,
   polaris: {intl},
 }: CombinedProps) {
@@ -118,6 +124,9 @@ function Button({
     plain && styles.plain,
     monochrome && styles.monochrome,
     size && size !== DEFAULT_SIZE && styles[variationName('size', size)],
+    alignment &&
+      alignment !== DEFAULT_ALIGNMENT &&
+      styles[variationName('alignment', alignment)],
     fullWidth && styles.fullWidth,
     icon && children == null && styles.iconOnly,
   );
