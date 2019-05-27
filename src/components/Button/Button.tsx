@@ -113,6 +113,7 @@ function Button({
   polaris: {intl},
 }: CombinedProps) {
   const isDisabled = disabled || loading;
+
   const className = classNames(
     styles.Button,
     primary && styles.primary,
