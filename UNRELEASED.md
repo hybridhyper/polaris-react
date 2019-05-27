@@ -16,7 +16,7 @@ Use [the changelog guidelines](https://git.io/polaris-changelog-guidelines) to f
 
 ### Enhancements
 
-- Added new Alignment property to button which modifies the inner text-align of the button. Useful for plain buttons.
+- Added new Alignment property to button which modifies its inner text alignment. Useful for plain buttons.
 
 ### Bug fixes
 
